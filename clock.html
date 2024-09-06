@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./clock.css">
+</head>
+<body>
+    <main class="container">
+        <div class="inner-container">
+            <div class="toggle-container">
+                <div id="format-toggle-twelve" class="format-toggle-twelve">
+                    <div class="format-switch"></div>
+                </div>
+            </div>
+            <div class="clock-container">
+                <div class="clock-body">
+                    <section id="time" class="time"></section>
+                    <section class="seconds">
+                        <div id="twelvehour" class="am"></div>
+                        <div id="second" class="second"></div>
+                    </section>
+                </div>
+                <div id="day" class="day-body"></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./clock.js"></script>
+</body>
+</html>

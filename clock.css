@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+.container {
+  width: 100%;
+  height: 100dvh;
+  background: #2d033b;
+  color: #FFF;
+}
+
+.inner-container {
+  width: 30%;
+  height: 95%;
+  flex-direction: column;
+}
+
+.toggle-container {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container, .inner-container, .clock-container, .am, .second, .day-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.format-toggle-twelve, .format-toggle-twenty{
+  height: 2rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: justify-content 1s ease-in-out;
+}
+
+.format-toggle-twelve{
+  background-image: url('/Th.svg');
+  justify-content: flex-start;
+}
+
+.format-toggle-twenty{
+  background-image: url('/Twh.svg');
+  justify-content: flex-end;
+}
+
+.format-switch{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url('/switchbutton.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 0.2rem;
+  margin: 0.2rem;
+}
+
+.clock-container{
+    height: 30%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    box-shadow: 9px 24px 15px 2px rgba(0, 0, 0, 0.50);
+    flex-direction: column;
+}
+
+.clock-body{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 4rem;
+    height: 100%;
+}
+
+.seconds{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+
+.am, .second{
+    height: 45%;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.day-body{
+    height: 40%;
+    width: 90%;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .inner-container {
+    width: 85%;
+    height: 95%;
+    flex-direction: column;
+  }
+}
